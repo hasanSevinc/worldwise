@@ -1,7 +1,7 @@
 import styles from "./CityItem.module.css";
 
-function CityItem() {
-  return <li className={styles.cityItem}>city</li>;
+function CityItem({ city }) {
+  return <li className={styles.cityItem}>{city.emoji}</li>;
 }
 
 export default CityItem;

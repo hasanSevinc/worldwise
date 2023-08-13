@@ -1,9 +1,9 @@
-import CityItem from "./CityItem";
+// import CityItem from "./CityItem";
 import styles from "./CityList.module.css";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
 
-// eslint-disable-next-line react/prop-types
 function CityList({ cities, isLoading }) {
+  console.log(cities);
   if (isLoading) return <Spinner />;
   return (
     <ul className={styles.cityList}>
